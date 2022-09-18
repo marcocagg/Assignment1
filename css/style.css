@@ -5,35 +5,84 @@ body {
     padding: 0px;
     background: whitesmoke;
     background-color: #1d1e20;
-    font-family: -apple-system, Ubuntu, Roboto, Verdana; 
-}
-.navigation img {
-    border-radius: 50%;
-    float: left;
-    padding: 8px 10px;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
 
-.navigation {
-    background-color: #434242;
-    overflow: hidden;
+#dropdown {
+    position: relative;
+    display: inline-block;
 }
 
-.navigation a{
+#ddButton {
+    background-color: #1d1e20;
     color: whitesmoke;
-    float: left;
-    text-align: center;
-    display: block;
-    padding: 18px 20px;
-    font-size: 25px;
-    text-decoration: none;
+    padding: 14px 22px;
+    font-size: 30px;
+    border: none;
 }
 
-.navigation a:hover {
+#dropdownLinks {
+    display: none;
+    position: absolute;
+    background-color: #1d1e20;
+    min-width: 120px;
+}
+
+#dropdownLinks a {
+    color: whitesmoke;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#dropdown:hover #dropdownLinks{
+    display: block;
+    float: right;
+}
+
+#dropdownLinks a:hover {
     color: black;
     background-color: #3f1d59;
 }
 
-#banner h1 {
+#dropdown:hover #ddButton{
+    background-color: #3f1d59;
+}
+
+#pfp img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    
+}
+
+#banner h1,h3{
     color: whitesmoke;
     text-align: center;
+    position: relative;
+    top: 20px;
+    margin: auto;   
+}
+
+#links {
+    text-decoration: none;
+    position: relative;
+    top: 10px;
+    text-align: center;
+    margin: auto; 
+}
+
+#footer {
+    color: whitesmoke;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%
+
+
 }
