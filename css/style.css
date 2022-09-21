@@ -26,6 +26,7 @@ body {
     position: absolute;
     background-color: #1d1e20;
     min-width: 120px;
+    z-index: 1;
 }
 
 #dropdownLinks a {
@@ -79,10 +80,85 @@ body {
 #footer {
     color: whitesmoke;
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+}
 
+#aboutmehead h1 {
+    color: whitesmoke;
+    text-align: center;
+    top: 20px;
+    margin: auto;   
+}
 
+#pfpam img{
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    display: block;
+    margin-left: 340px;
+    margin-top: 50px;
+    
+}
+
+#video{
+    float: right;
+    padding-right: 80px;
+    margin-top: -150px;
+}
+
+#middle p {
+
+    color: whitesmoke;
+    text-align: center;
+    font-size: 18px;
+    top: 80px;
+    margin-left: 20px;
+    margin-right: 700px;
+}
+
+#contact {
+    background: linear-gradient(#064893,#3f1d59);
+    border-style: solid;
+    border-color: whitesmoke;
+    border-width: 2px;
+    padding: 15px;
+    text-align: center;
+    width: 300px;
+    height: 500px;
+    margin: auto;
+}
+
+#contact label{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 15px;
+    margin: auto;
+}
+
+#contact input{
+    background-color: #1d1e20;
+    color: whitesmoke;
+}
+
+#contact p{
+    font-weight: bold;
+}
+
+#contact textarea {
+    background-color: #1d1e20;
+    color: whitesmoke;
+    resize: none;
+}
+
+#submitB {
+    color: whitesmoke;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:2%;
+}
+
+a {
+    text-decoration: none;
 }

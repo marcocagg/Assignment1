@@ -1,0 +1,62 @@
+<!--Decleration of HTML Doctype-->
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <!--Enables the UTF-8 Character Set-->
+        <meta charset="UTF-8">
+        <title>Marco's Site!</title>
+        <link href="css/style.css" type="text/css" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <div id="wrapper">
+
+            <div id="dropdown">
+                <button id="ddButton"> ≡ </button>
+                <div id="dropdownLinks">
+                    <a href="index.html">Home</a>
+                    <a href="aboutme.html">About Me</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contactme.html">Contact Me</a>
+                </div>
+            </div>
+            
+            <div id="banner">
+                <h1>Contact Me!</h1>
+            </div>
+            <br>
+
+
+            <div id="contact">
+                <form action="mailto:marco.caggianiello@ontariotechu.net" Form method="post" ?subject="Website Contact" enctype="text/plain" name="EForm">
+                    <p>
+                    <label for="name">Enter Your Name:</label><br>
+                    <input type="text" name="name" size="40" required><br>
+                    </p>
+                    
+                    <p>
+                    <label for="email">Enter Your Email:</label><br>
+                    <input type="email" name="email" size="40" required><br>
+                    </p>
+
+                    <p>
+                    <label for="comments">Questions, Comments, Concerns?:</label><br> 
+                    <textarea name="comments" cols="38" rows="18" required></textarea><br>
+                    </p>
+
+                    <div id="submitB">
+                        <input type="submit" value="Submit">
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="clear"></div>
+
+            <div id="footer">
+                <h5>© 2022 Marco Caggianiello</h5>
+            </div>
+
+        </div>
+    </body>
+</html>
