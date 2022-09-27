@@ -4,14 +4,19 @@
     <head>
         <!--Enables the UTF-8 Character Set-->
         <meta charset="UTF-8">
+        <link rel="icon" href="Images/favicon.png">
         <title>Marco's Site!</title>
-        <link href="css/style.css" type="text/css" rel="stylesheet"/>
+        <!-- full-size monitor style sheet--> 
+        <link href="css/desktop.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)"> 
+        <!-- tablet style sheet--> 
+        <link href="css/tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:960px)"> 
+        <!-- phone style sheet--> 
+        <link href="css/mobile.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)"> 
     </head>
 
     <body>
         <div id="wrapper">
-
-            <div id="dropdown">
+            <nav>
                 <button id="ddButton"> ≡ </button>
                 <div id="dropdownLinks">
                     <a href="index.html">Home</a>
@@ -19,7 +24,7 @@
                     <a href="projects.html">Projects</a>
                     <a href="contactme.html">Contact Me</a>
                 </div>
-            </div>
+            </nav>
 
             <div id="aboutmehead">
                 <h1>About Me!</h1>
@@ -41,14 +46,15 @@
                 <p>How's it going, my name is Marco Caggianiello.</p>
                 <p>I am 19 and currently in my second year at Ontario Tech University studying Networking and IT Security.</p>
                 <p>Im hoping to improve a lot during my time in university, specifically my programming and networking skills.</p>
-                <p>Some of my interests include music, movies, video games, and american football.</p>
+                <p>Some of my interests include music, movies, video games, and American football.</p>
+                <p>My favourite team is the Atlanta Falcons.</p>
             </div>
 
             <div class="clear"></div>
 
-            <div id="footer">
+            <footer>
                 <h5>© 2022 Marco Caggianiello</h5>
-            </div>
+            </footer>
 
         </div>
     </body>

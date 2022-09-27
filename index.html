@@ -4,14 +4,19 @@
     <head>
         <!--Enables the UTF-8 Character Set-->
         <meta charset="UTF-8">
+        <link rel="icon" href="Images/favicon.png">
         <title>Marco's Site!</title>
-        <link href="css/style.css" type="text/css" rel="stylesheet"/>
+        <!-- full-size monitor style sheet--> 
+        <link href="css/desktop.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)"> 
+        <!-- tablet style sheet--> 
+        <link href="css/tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:960px)"> 
+        <!-- phone style sheet--> 
+        <link href="css/mobile.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)"> 
     </head>
 
     <body>
         <div id="wrapper">
-
-            <div id="dropdown">
+            <nav>
                 <button id="ddButton"> ≡ </button>
                 <div id="dropdownLinks">
                     <a href="index.html">Home</a>
@@ -19,7 +24,7 @@
                     <a href="projects.html">Projects</a>
                     <a href="contactme.html">Contact Me</a>
                 </div>
-            </div>
+            </nav>
 
             <div id="pfp">
                 <img src="Images/i.png" alt="ProfilePic">
@@ -27,7 +32,7 @@
 
             <div id="banner">
                 <h1>Welcome!</h1>
-                <h3>Website of Marco Antonio Caggianiello</h3>
+                <h3>Website of Marco Caggianiello</h3>
             </div>
             <br> 
             <div id="links">
@@ -41,9 +46,9 @@
 
             <div class="clear"></div>
 
-            <div id="footer">
+            <footer>
                 <h5>© 2022 Marco Caggianiello</h5>
-            </div>
+            </footer>
 
         </div>
     </body>

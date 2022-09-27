@@ -1,0 +1,232 @@
+@charset "UTF-8";
+/*
+My Colour Pallette
+- #060606
+- #f5f5f5
+- #1d1e20
+- #3f1d59
+- #064893
+- #C1BBBB
+*/
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: #f5f5f5;
+    background-color: #1d1e20;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+nav {
+    position: relative;
+    display: inline-block;
+}
+
+#ddButton {
+    background-color: transparent;
+    color: #f5f5f5;
+    padding: 14px 22px;
+    font-size: 30px;
+    border: none;
+}
+
+#dropdownLinks {
+    display: none;
+    position: absolute;
+    background-color: #1d1e20;
+    min-width: 120px;
+    z-index: 1;
+}
+
+#dropdownLinks a {
+    color: #f5f5f5;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+nav:hover #dropdownLinks{
+    display: block;
+    float: right;
+}
+
+#dropdownLinks a:hover {
+    color: #060606;
+    background-color: #3f1d59;
+}
+
+nav:hover #ddButton{
+    background-color: #3f1d59;
+}
+
+#pfp img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    box-shadow: -2px 0 #f5f5f5, 0 2px #f5f5f5, 2px 0 #f5f5f5, 0 -2px #f5f5f5;
+}
+
+#banner h1,h3{
+    color: #f5f5f5;
+    text-align: center;
+    position: relative;
+    top: 20px;
+    margin: auto;   
+}
+
+#links {
+    text-decoration: none;
+    position: relative;
+    top: 10px;
+    text-align: center;
+    margin: auto; 
+}
+
+#aboutmehead h1 {
+    color: #f5f5f5;
+    text-align: center;
+    top: 20px;
+    margin: auto;   
+}
+
+#pfpam img{
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    display: block;
+    margin-left: 21%;
+    margin-right: 80%;
+    margin-top: 2%;
+    box-shadow: -2px 0 #f5f5f5, 0 2px #f5f5f5, 2px 0 #f5f5f5, 0 -2px #f5f5f5;
+}
+
+#video{
+    float: right;
+    margin-right: 5%;
+    margin-top: -8%;
+    border-style: solid;
+    border-color: #f5f5f5;
+    border-width: 2px;
+}
+
+#middle p {
+    color: #f5f5f5;
+    text-align: center;
+    font-size: 18px;
+    top: 5%;
+    margin-left: 3%;
+    margin-right: 50%;
+}
+
+#contact {
+    background: linear-gradient(#064893,#3f1d59);
+    border-style: solid;
+    border-color: #f5f5f5;
+    border-width: 2px;
+    padding: 15px;
+    text-align: center;
+    width: 25%;
+    height: 40%;
+    margin: auto;
+}
+
+#contact label{
+    text-align: center;
+    color: #f5f5f5;
+    font-size: 15px;
+    margin: auto;
+}
+
+#contact input{
+    background-color: #1d1e20;
+    color: #f5f5f5;
+    width: 77%;
+}
+
+#contact p{
+    font-weight: bold;
+}
+
+#contact textarea {
+    background-color: #1d1e20;
+    color: #f5f5f5;
+    resize: none;
+    width: 77%;
+}
+
+#submitB input{
+    color: #f5f5f5;
+    border-color: #f5f5f5;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    height: 40px;
+    width: 150px;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+#post {
+    display: block;
+    background-color: #C1BBBB;
+    padding: 15px;
+    margin-top: 3%;
+    margin-left: 20%;
+    margin-right: 20%;
+    max-width: auto;
+    max-height: auto;
+    height: 10%;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: #3f1d59;
+    border-width: 5px;
+    overflow: hidden;
+}
+
+#post img{
+    margin-top: 4%;
+    margin-left: 1.5%;
+    float:left;
+    border-radius: 50%;
+    box-shadow: -3px 0 #3f1d59, 0 3px #3f1d59, 3px 0 #3f1d59, 0 -3px #3f1d59;
+}
+
+#post h2{
+    margin-top: 2%;
+    margin-left: 17.5%;
+    color: #1d1e20;
+    text-align: left;
+}
+
+#post p{
+    color: #1d1e20; 
+    text-align: left;
+    margin-top: 2%;
+    margin-left: 17.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    color: #f5f5f5;
+    text-align: center;
+    position: relative;
+    top: 99%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-shadow: -1px 0 #060606, 0 1px #060606, 1px 0 #060606, 0 -1px #060606;
+}

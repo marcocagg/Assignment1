@@ -1,23 +1,31 @@
 @charset "UTF-8";
-
+/*
+My Colour Pallette
+- #060606
+- #f5f5f5
+- #1d1e20
+- #3f1d59
+- #064893
+- #C1BBBB
+*/
 body {
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
-    background: whitesmoke;
+    background: #f5f5f5;
     background-color: #1d1e20;
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
 
-#dropdown {
+nav {
     position: relative;
     display: inline-block;
 }
 
 #ddButton {
-    background-color: #1d1e20;
-    color: whitesmoke;
+    background-color: transparent;
+    color: #f5f5f5;
     padding: 14px 22px;
     font-size: 30px;
     border: none;
@@ -32,23 +40,27 @@ body {
 }
 
 #dropdownLinks a {
-    color: whitesmoke;
+    color: #f5f5f5;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
 }
 
-#dropdown:hover #dropdownLinks{
+nav:hover #dropdownLinks{
     display: block;
     float: right;
 }
 
 #dropdownLinks a:hover {
-    color: black;
+    color: #060606;
     background-color: #3f1d59;
 }
 
-#dropdown:hover #ddButton{
+nav:hover #ddButton{
     background-color: #3f1d59;
 }
 
@@ -60,11 +72,11 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 80px;
-    
+    box-shadow: -2px 0 #f5f5f5, 0 2px #f5f5f5, 2px 0 #f5f5f5, 0 -2px #f5f5f5;
 }
 
 #banner h1,h3{
-    color: whitesmoke;
+    color: #f5f5f5;
     text-align: center;
     position: relative;
     top: 20px;
@@ -80,7 +92,7 @@ body {
 }
 
 #aboutmehead h1 {
-    color: whitesmoke;
+    color: #f5f5f5;
     text-align: center;
     top: 20px;
     margin: auto;   
@@ -91,48 +103,52 @@ body {
     width: 180px;
     height: 180px;
     display: block;
-    margin-left: 22%;
+    margin-left: 21%;
+    margin-right: 80%;
     margin-top: 2%;
-    
+    box-shadow: -2px 0 #f5f5f5, 0 2px #f5f5f5, 2px 0 #f5f5f5, 0 -2px #f5f5f5;
 }
 
 #video{
     float: right;
-    padding-right: 80px;
-    margin-top: -150px;
+    margin-right: 5%;
+    margin-top: -8%;
+    border-style: solid;
+    border-color: #f5f5f5;
+    border-width: 2px;
 }
 
 #middle p {
-    color: whitesmoke;
+    color: #f5f5f5;
     text-align: center;
     font-size: 18px;
-    top: 80px;
-    margin-left: 20px;
-    margin-right: 700px;
+    top: 5%;
+    margin-left: 3%;
+    margin-right: 50%;
 }
 
 #contact {
     background: linear-gradient(#064893,#3f1d59);
     border-style: solid;
-    border-color: whitesmoke;
+    border-color: #f5f5f5;
     border-width: 2px;
     padding: 15px;
     text-align: center;
-    width: 25%;
+    width: 80%;
     height: 40%;
     margin: auto;
 }
 
 #contact label{
     text-align: center;
-    color: whitesmoke;
+    color: #f5f5f5;
     font-size: 15px;
     margin: auto;
 }
 
 #contact input{
     background-color: #1d1e20;
-    color: whitesmoke;
+    color: #f5f5f5;
     width: 77%;
 }
 
@@ -142,14 +158,14 @@ body {
 
 #contact textarea {
     background-color: #1d1e20;
-    color: whitesmoke;
+    color: #f5f5f5;
     resize: none;
     width: 77%;
 }
 
 #submitB input{
-    color: whitesmoke;
-    border-color: whitesmoke;
+    color: #f5f5f5;
+    border-color: #f5f5f5;
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -157,34 +173,35 @@ body {
     height: 40px;
     width: 150px;
     font-weight: bold;
+    cursor:pointer;
 }
 
 #post {
     display: block;
-    background-color: white;
-    padding: 20px;
-    margin-top: 30px;
-    margin-left: 20%;
-    margin-right: 20%;
+    background-color: #C1BBBB;
+    padding: 15px;
+    margin-top:9%;
+    margin-left: 5%;
+    margin-right: 5%;
     max-width: auto;
     max-height: auto;
     height: 10%;
     border-style: solid;
     border-radius: 15px;
-    border-color: #064893;
-    border-width: 3px;
+    border-color: #3f1d59;
+    border-width: 5px;
     overflow: hidden;
 }
 
 #post img{
-    float:left;
+    margin-left: 25%;
+    margin-right: 25%;
     border-radius: 50%;
-    box-shadow: 0 6px 8px 0 black;
+    box-shadow: -3px 0 #3f1d59, 0 3px #3f1d59, 3px 0 #3f1d59, 0 -3px #3f1d59;
 }
 
 #post h2{
-    margin-top: 2%;
-    margin-left: 2%;
+    margin-top: 15%;
     color: #1d1e20;
     text-align: center;
 }
@@ -192,7 +209,7 @@ body {
 #post p{
     color: #1d1e20; 
     text-align: center;
-    margin-top: 5px;
+    margin-top: 12%;
     margin-left: 2%;
 }
 
@@ -200,11 +217,14 @@ a {
     text-decoration: none;
 }
 
-#footer {
-    color: whitesmoke;
+footer {
+    color: #f5f5f5;
     text-align: center;
-    position: fixed;
+    position: relative;
+    top: 99%;
     bottom: 0;
-    width: 100%;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-shadow: -1px 0 #060606, 0 1px #060606, 1px 0 #060606, 0 -1px #060606;
 }
