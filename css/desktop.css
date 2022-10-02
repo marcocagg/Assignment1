@@ -4,9 +4,9 @@ My Colour Pallette
 - #060606
 - #f5f5f5
 - #1d1e20
-- #3f1d59
 - #064893
-- #C1BBBB
+- #7536A6
+- #3D4244
 */
 body {
     width: 100%;
@@ -15,6 +15,7 @@ body {
     padding: 0px;
     background: #f5f5f5;
     background-color: #1d1e20;
+    /*Font family found online, reccomended because it supports wide variety of systems, check readme file for more information*/
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
 
@@ -23,6 +24,7 @@ nav {
     display: inline-block;
 }
 
+/*Dropdown menu inspired by W3Schools, check read me file for more information*/
 #ddButton {
     background-color: transparent;
     color: #f5f5f5;
@@ -32,10 +34,12 @@ nav {
 }
 
 #dropdownLinks {
+    /*Display none hides the elements, in this case the links from the dropdown menu*/
     display: none;
     position: absolute;
     background-color: #1d1e20;
     min-width: 120px;
+    /*Z-index allows you to specify the order of an element from fron to back, so having it at 1 would awlays have the element on top*/
     z-index: 1;
 }
 
@@ -50,18 +54,20 @@ nav {
     border-width: 1px;
 }
 
+/*What happens when you hover over the menu button*/
 nav:hover #dropdownLinks{
+    /*Display: block will show the previously hidden elements but "block" will specifically seperate the other block elements so they wont overlap.*/
     display: block;
     float: right;
 }
 
 #dropdownLinks a:hover {
     color: #060606;
-    background-color: #3f1d59;
+    background-color: #7536A6;
 }
 
 nav:hover #ddButton{
-    background-color: #3f1d59;
+    background-color: #7536A6;
 }
 
 #pfp img{
@@ -72,6 +78,8 @@ nav:hover #ddButton{
     margin-left: auto;
     margin-right: auto;
     margin-top: 80px;
+    /*Creates a border around the image*/
+    /*Reason border was done like this was because normal border commands werent working on certain elements*/
     box-shadow: -2px 0 #f5f5f5, 0 2px #f5f5f5, 2px 0 #f5f5f5, 0 -2px #f5f5f5;
 }
 
@@ -102,17 +110,17 @@ nav:hover #ddButton{
     border-radius: 50%;
     width: 180px;
     height: 180px;
-    display: block;
-    margin-left: 21%;
-    margin-right: 80%;
-    margin-top: 2%;
+    margin-left: 44%;
+    margin-top: 1%;
     box-shadow: -2px 0 #f5f5f5, 0 2px #f5f5f5, 2px 0 #f5f5f5, 0 -2px #f5f5f5;
 }
 
 #video{
+    height: 360px;
+    width: 640px;
     float: right;
-    margin-right: 5%;
-    margin-top: -8%;
+    margin-top: 1%;
+    margin-right: 4%;
     border-style: solid;
     border-color: #f5f5f5;
     border-width: 2px;
@@ -122,13 +130,14 @@ nav:hover #ddButton{
     color: #f5f5f5;
     text-align: center;
     font-size: 18px;
+    margin-top: 2%;
     top: 5%;
     margin-left: 3%;
     margin-right: 50%;
 }
 
 #contact {
-    background: linear-gradient(#064893,#3f1d59);
+    background: linear-gradient(#064893,#7536A6);
     border-style: solid;
     border-color: #f5f5f5;
     border-width: 2px;
@@ -178,7 +187,7 @@ nav:hover #ddButton{
 
 #post {
     display: block;
-    background-color: #C1BBBB;
+    background-color: #3D4244;
     padding: 15px;
     margin-top: 3%;
     margin-left: 20%;
@@ -188,8 +197,9 @@ nav:hover #ddButton{
     height: 10%;
     border-style: solid;
     border-radius: 15px;
-    border-color: #3f1d59;
+    border-color: #7536A6;
     border-width: 5px;
+    /*Keeps text from going outside the post box*/
     overflow: hidden;
 }
 
@@ -198,21 +208,21 @@ nav:hover #ddButton{
     margin-left: 1.5%;
     float:left;
     border-radius: 50%;
-    box-shadow: -3px 0 #3f1d59, 0 3px #3f1d59, 3px 0 #3f1d59, 0 -3px #3f1d59;
+    box-shadow: -3px 0 #7536A6, 0 3px #7536A6, 3px 0 #7536A6, 0 -3px #7536A6;
 }
 
 #post h2{
     margin-top: 2%;
-    margin-left: 17.5%;
-    color: #1d1e20;
+    margin-left: 19%;
+    color: #f5f5f5;
     text-align: left;
 }
 
 #post p{
-    color: #1d1e20; 
+    color: #f5f5f5; 
     text-align: left;
     margin-top: 2%;
-    margin-left: 17.5%;
+    margin-left: 19%;
 }
 
 a {

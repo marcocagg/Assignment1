@@ -4,8 +4,10 @@
     <head>
         <!--Enables the UTF-8 Character Set-->
         <meta charset="UTF-8">
+        <!-- Changes tab image for the website-->
         <link rel="icon" href="Images/favicon.png">
         <title>Marco's Site!</title>
+        <meta name="viewport" content="width=device-width"> 
         <!-- full-size monitor style sheet--> 
         <link href="css/desktop.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)"> 
         <!-- tablet style sheet--> 
@@ -17,8 +19,10 @@
     <body>
         <div id="wrapper">
             <nav>
+                <!--Button for the dropdown menu-->
                 <button id="ddButton"> ≡ </button>
                 <div id="dropdownLinks">
+                    <!--Links to the different webpages on the drop down menu-->
                     <a href="index.html">Home</a>
                     <a href="aboutme.html">About Me</a>
                     <a href="projects.html">Projects</a>
@@ -36,7 +40,7 @@
             </div>
 
             <div id="video">
-                <video width="640" height="360" controls>
+                <video width="100%" controls poster="Images/cover.png">
                     <source src="Images/about.mp4" />
                     Your browser doesn't support the video tag.
                 </video>

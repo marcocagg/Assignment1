@@ -6,19 +6,22 @@
         <meta charset="UTF-8">
         <link rel="icon" href="Images/favicon.png">
         <title>Marco's Site!</title>
+        <meta name="viewport" content="width=device-width"> 
         <!-- full-size monitor style sheet--> 
         <link href="css/desktop.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)"> 
         <!-- tablet style sheet--> 
         <link href="css/tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:960px)"> 
         <!-- phone style sheet--> 
-        <link href="css/mobile.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)"> 
+        <link href="css/mobile.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">  
     </head>
 
     <body>
         <div id="wrapper">
             <nav>
+                <!--Button for the dropdown menu-->
                 <button id="ddButton"> ≡ </button>
                 <div id="dropdownLinks">
+                    <!--Links to the different webpages on the drop down menu-->
                     <a href="index.html">Home</a>
                     <a href="aboutme.html">About Me</a>
                     <a href="projects.html">Projects</a>
@@ -35,22 +38,22 @@
                 <form action="mailto:marco.caggianiello@ontariotechu.net" Form method="post" ?subject="Website Contact" enctype="text/plain" name="EForm">
                     <p>
                     <label for="name">Enter Your Name:</label><br>
-                    <input type="text" placeholder="Ex: Quandale Dingle" name="name" size="40" required><br>
+                    <input type="text" placeholder="Ex: Dave Stieb" name="name" size="40" required><br>
                     </p>
                     
                     <p>
                     <label for="email">Enter Your Email:</label><br>
-                    <input type="email" placeholder="Ex: quandale.dingle@example.com" name="email" size="40" required><br>
+                    <input type="email" placeholder="Ex: dave.stieb@example.com" name="email" size="40" required><br>
                     </p>
 
                     <p>
                         <label for="phone">Enter Your Phone Number:</label><br>
-                        <input type="tel" placeholder="Ex: 4164390000" name="phone" size="40" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" notrequired><br>
+                        <input type="tel" placeholder="Ex: 4165671111" name="phone" size="40" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" notrequired><br>
                         </p>
 
                     <p>
                     <label for="comments">Questions, Comments, Concerns?:</label><br> 
-                    <textarea name="comments" placeholder="Ex: Ur site is trash my boy." cols="38" rows="14" required></textarea><br>
+                    <textarea name="comments" placeholder="Enter message here." cols="38" rows="14" required></textarea><br>
                     </p>
 
                     <div id="submitB">
